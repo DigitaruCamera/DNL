@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerBullet.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMainScript.cs" />
      <Compile Include="Assets\Scripts\UI\ButtonsFonctions.cs" />
+     <Compile Include="Assets\Scripts\UI\FPSDisplay.cs" />
      <Compile Include="Assets\Scripts\UI\Quit.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

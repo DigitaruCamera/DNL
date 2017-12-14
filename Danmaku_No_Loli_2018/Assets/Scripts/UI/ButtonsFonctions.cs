@@ -23,6 +23,7 @@ public class ButtonsFonctions : MonoBehaviour
 		public void PauseGame()
 		{
 			Time.timeScale =0;
+			GameObject.Find ("Player").GetComponent<PlayerMainScript>().enabled = false;
 		}
 
 }

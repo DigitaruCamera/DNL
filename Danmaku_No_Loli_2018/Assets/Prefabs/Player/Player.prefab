@@ -36,7 +36,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4282637544514274}
   - component: {fileID: 33565861661063614}
-  - component: {fileID: 65800979510683548}
   - component: {fileID: 23500922540026682}
   m_Layer: 0
   m_Name: Cube
@@ -181,18 +180,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.13
---- !u!65 &65800979510683548
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1760155211384882}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114273815455944584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,11 +191,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64fbe200b551b174cb78235eb7e45847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 5
   focus: 3
-  bullet: {fileID: 0}
+  bullet: {fileID: 1826959961347610, guid: 9349785f5e81ed64e849aee092c9acf2, type: 2}
   bomb: {fileID: 0}
-  tire: 0
+  tire: 1
   delay: 25
 --- !u!114 &114420972692101880
 MonoBehaviour:
@@ -254,7 +241,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 8d160a964a9002f44a207f39ee9ed0c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

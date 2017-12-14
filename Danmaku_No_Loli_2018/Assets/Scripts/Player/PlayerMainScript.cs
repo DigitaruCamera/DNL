@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMainScript : MonoBehaviour
-	{
+{
 		public float speed = 11;
 		public float focus = 3;
 		public GameObject bullet;
 		public GameObject bomb;
-		public bool tire = false;
+		public bool tire = true;
 		double current_time;
 		double delayed_time;
 		public double delay = 25;
-		double bomb_bar = 1;
+		double BombPercent = 1;
 		float angle = 0.05f;
 
 
@@ -49,31 +50,23 @@ public class PlayerMainScript : MonoBehaviour
 
 		void action()
 		{
-			//============TIRE==============
-			if (Input.GetButtonDown("Fire1"))
-				tire = !tire;
-			if (Input.GetButtonUp("Fire1"))
-				tire = !tire;
-			bomb_bar += Time.deltaTime / delay;
-			//==============================
 			//=============FOCUS============
-			if (Input.GetButtonDown("Fire3")) {
+			if (Input.GetButtonDown("Fire1")) {
 				speed = speed / focus;
 				angle = -0.05f;
 			}
-			if (Input.GetButtonUp("Fire3")) {
+			if (Input.GetButtonUp("Fire1")) {
 				speed = speed * focus;
 				angle = 0.05f;
 			}
-			//==============================
 			//============BOMB==============
-//			GameObject.Find ("Image_bombprogress_fill").GetComponent <Image>().fillAmount = (float)bomb_bar;
+			GameObject.Find ("Image_bombprogress_fill").GetComponent <Image>().fillAmount = (float)BombPercent;
 			if (current_time >= delayed_time && Input.GetButtonDown("Fire2"))
 			{
-//				GameObject.Find ("game_controller").GetComponent<ui_score>().score -= 10;
+//				GameObject.Find ("SceneManager").GetComponent<ui_score>().score -= 10;
 				Instantiate (bomb, transform.position, transform.rotation);
 				delayed_time = current_time + delay;
-				bomb_bar = 0;
+				BombPercent = 0;
 			}
 			//==============================
 		}
@@ -90,9 +83,9 @@ public class PlayerMainScript : MonoBehaviour
 			if (coll.gameObject.tag == "Enemy") {
 				Destroy (gameObject);
 			}
-			if (coll.gameObject.tag == "Enemybullet") {
+			if (coll.gameObject.tag == "EnemyBullet") {
 				Destroy (gameObject);
 			}
 		}
 
-	}
+}
