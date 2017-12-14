@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonsFonctions : MonoBehaviour 
 {
+	public GameObject Player;
 
 		public GameObject loadingImage;
 
@@ -18,4 +19,10 @@ public class ButtonsFonctions : MonoBehaviour
 		{
 			SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 		}
+
+		public void PauseGame()
+		{
+			Time.timeScale =0;
+		}
+
 }

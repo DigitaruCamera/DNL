@@ -20,12 +20,8 @@ public class PlayerMainScript : MonoBehaviour
 		{
 			while (true) {
 				if (tire == true){
-					Instantiate (bullet, new Vector3(transform.position.x + 0.2f, transform.position.y, transform.position.z), transform.rotation);
-					Instantiate (bullet, new Vector3(transform.position.x - 0.2f, transform.position.y, transform.position.z), transform.rotation);
-					Instantiate (bullet, new Vector3(transform.position.x + 0.6f, transform.position.y - 0.4f, transform.position.z), new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z - angle, transform.rotation.w));
-					Instantiate (bullet, new Vector3(transform.position.x + 1f, transform.position.y - 0.5f, transform.position.z), new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z - angle, transform.rotation.w));
-					Instantiate (bullet, new Vector3(transform.position.x - 0.6f, transform.position.y - 0.4f, transform.position.z), new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z + angle, transform.rotation.w));
-					Instantiate (bullet, new Vector3(transform.position.x - 1f, transform.position.y - 0.5f, transform.position.z), new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z + angle, transform.rotation.w));
+					Instantiate (bullet, new Vector3(transform.position.x + 0.2f, transform.position.y + 0.4f, transform.position.z), transform.rotation);
+					Instantiate (bullet, new Vector3(transform.position.x - 0.2f, transform.position.y + 0.4f, transform.position.z), transform.rotation);
 					//	Instantiate (bullet, transform.position, new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z - angle, transform.rotation.w));
 					yield return new WaitForSeconds (0.05f);
 				}

@@ -13,6 +13,6 @@ public class Quit : MonoBehaviour {
 	IEnumerator Example() {
 		yield return new WaitForSeconds(1);
 		Application.Quit();
-		Debug.Log ("fin");
+		Debug.Log ("Quited");
 	}
 }
