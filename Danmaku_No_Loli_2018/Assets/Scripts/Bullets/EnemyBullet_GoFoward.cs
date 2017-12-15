@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyBullet_GoFoward : MonoBehaviour {
 
-	public int Bspeed = 15;
+/*	public int Bspeed = 15;
 	public float lifeTime = 1;
 
 	void Start ()
@@ -25,5 +25,5 @@ public class EnemyBullet_GoFoward : MonoBehaviour {
 
 
 		}
-	}
+	} */
 }
