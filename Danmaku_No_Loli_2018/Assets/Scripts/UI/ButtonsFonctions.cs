@@ -26,4 +26,21 @@ public class ButtonsFonctions : MonoBehaviour
 			GameObject.Find ("Player").GetComponent<PlayerMainScript>().enabled = false;
 		}
 
+		public void PlayGame()
+		{
+			Time.timeScale =1;
+			GameObject.Find ("Player").GetComponent<PlayerMainScript>().enabled = true;
+		}
+
+		public void HideCursor()
+		{
+			Cursor.visible = false;
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+
+		public void ShowCursor()
+		{
+			Cursor.visible = true;
+			Cursor.lockState = CursorLockMode.None;
+		}
 }

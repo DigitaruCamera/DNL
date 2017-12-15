@@ -51,7 +51,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\3DBackground\BackgroundOffset.cs" />
+     <Compile Include="Assets\Scripts\3DBackground\GenerateOthersBackground.cs" />
+     <Compile Include="Assets\Scripts\Ancient Script en vrac\bullet\Bullet_semiguided.cs" />
+     <Compile Include="Assets\Scripts\Ancient Script en vrac\bullet\Bullet_sin.cs" />
+     <Compile Include="Assets\Scripts\Ancient Script en vrac\enemy\boss_proto1.cs" />
+     <Compile Include="Assets\Scripts\Ancient Script en vrac\enemy\enemy_proto1.cs" />
+     <Compile Include="Assets\Scripts\Ancient Script en vrac\enemy\enemy_test.cs" />
+     <Compile Include="Assets\Scripts\Ancient Script en vrac\enemy\enemy_tir_exemple.cs" />
+     <Compile Include="Assets\Scripts\Ancient Script en vrac\hud\best_score.cs" />
+     <Compile Include="Assets\Scripts\Ancient Script en vrac\hud\ui_score.cs" />
+     <Compile Include="Assets\Scripts\Ancient Script en vrac\hud\ui_time.cs" />
+     <Compile Include="Assets\Scripts\Ancient Script en vrac\menu\parametre_controle.cs" />
+     <Compile Include="Assets\Scripts\Ancient Script en vrac\menu\pause_menu.cs" />
+     <Compile Include="Assets\Scripts\Bullets\EnemyBullet_GoFoward.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemySpawnerScript.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyTest.cs" />
+     <Compile Include="Assets\Scripts\GamePlay\SceneManagerMainScript.cs" />
      <Compile Include="Assets\Scripts\Player\BlockOnCamera.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerBomb.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerBullet.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMainScript.cs" />
      <Compile Include="Assets\Scripts\UI\ButtonsFonctions.cs" />

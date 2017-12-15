@@ -63,7 +63,7 @@ public class PlayerMainScript : MonoBehaviour
 			GameObject.Find ("Image_bombprogress_fill").GetComponent <Image>().fillAmount = (float)BombPercent;
 			if (current_time >= delayed_time && Input.GetButtonDown("Fire2"))
 			{
-//				GameObject.Find ("SceneManager").GetComponent<ui_score>().score -= 10;
+//				GameObject.Find ("SceneManager").GetComponent<TextScore>().score -= 10;
 				Instantiate (bomb, transform.position, transform.rotation);
 				delayed_time = current_time + delay;
 				BombPercent = 0;

@@ -1,6 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GamePlay\SceneManagerMainScript.cs">
+    <Files>
+      <File FileName="Assets\Scripts\UI\ButtonsFonctions.cs" Line="22" Column="2" />
+      <File FileName="Assets\Scripts\Ancient Script en vrac\menu\pause_menu.cs" Line="50" Column="3" />
+      <File FileName="Assets\Scripts\GamePlay\SceneManagerMainScript.cs" Line="14" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
