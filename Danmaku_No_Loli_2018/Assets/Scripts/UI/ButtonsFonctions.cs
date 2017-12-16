@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Advertisements;
 
 public class ButtonsFonctions : MonoBehaviour 
 {
@@ -42,5 +43,10 @@ public class ButtonsFonctions : MonoBehaviour
 		{
 			Cursor.visible = true;
 			Cursor.lockState = CursorLockMode.None;
+		}
+
+	public void ShowAds()
+		{
+			Advertisement.Show();
 		}
 }
