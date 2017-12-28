@@ -72,6 +72,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerBomb.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerBullet.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMainScript.cs" />
+     <Compile Include="Assets\Scripts\sceneManager\Ads.cs" />
      <Compile Include="Assets\Scripts\UI\ButtonsFonctions.cs" />
      <Compile Include="Assets\Scripts\UI\FPSDisplay.cs" />
      <Compile Include="Assets\Scripts\UI\Quit.cs" />
